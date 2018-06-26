@@ -111,7 +111,6 @@ if(isset($_COOKIE['user_id']) && isset($_COOKIE['session_id']) && hashvalValid()
                         echo 'done.';
                     }
                 } else if(strcmp($_REQUEST['action'], 'install') == 0) {
-                    /*
                     $dirName = '../plugin/'.$_REQUEST['plugin-name'];
                     if(!mkdir($dirName)) {
                         die('failed to create dir.');
@@ -128,8 +127,6 @@ if(isset($_COOKIE['user_id']) && isset($_COOKIE['session_id']) && hashvalValid()
                     }
                     move_uploaded_file($_FILES['plugin-file']['tmp_name'], '../plugin/'.$_REQUEST['plugin-name'].'/retrieva.php');
                     echo 'done.';
-                    */
-                    echo 'Uploading facility is disabled for security reasons.<br />';
                 }
             }
             echo 'Install new plugin: <br />';
